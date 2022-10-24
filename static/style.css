@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#container {
+    border: 1px solid black;
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10%;
+}
+
+.left {
+    background-color: rgb(185, 142, 3);
+    float: left;
+    width: 30%;
+    color: white;
+    padding: 15px;
+    font-family: "Lucida Console", Times, serif;
+}
+
+.image {
+    width: 70%;
+    margin: 10px 25%;
+}
+
+.left img {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.left .info_left {
+    margin-top: 30px;
+}
+
+.left h3 {
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.left p,
+.right p {
+    line-height: 35px;
+}
+
+.right {
+    padding: 10px 15px;
+    font-family: "Lucida Console", Times, serif;
+}

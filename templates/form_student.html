@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire d'inscription/student</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+
+    <h2>Formulaire d'inscription</h2>
+    <form method="POST" action="http://127.0.0.1:5000/student" enctype="multipart/form-data">
+        Genre : <br><input type="radio" name="sexe" value="Femme">Femme<br>
+        <input type="radio" name="sexe" value="Homme">Homme<br>
+        <br>
+        <label>Nom</label> : <input type="text" name="nom" placeholder="Votre nom" />
+        <div><label>Prenom(s)</label> : <input type="text" name="prenom" placeholder="Votre prénom" /></div>
+        Votre âge : <input type="number" name="age" size="2"><br> Votre adresse: <input type="text" name="address">
+        <br>
+        <label>E-mail</label> : <input type="email" name="email" placeholder="exemple@gmail.com" /><br>
+
+        <label>Téléphone</label> : <input type="number" name="telephone" size="10" placeholder="03********" /><br>
+        <label>Vous êtes en classe de:</label>
+        <div>
+            <input type="radio" name="classe" value="L1">
+            <label>L1</label>
+
+            <input type="radio" name="classe" value="L2">
+            <label>L2</label>
+
+            <input type="radio" name="classe" value="L3">
+            <label>L3</label>
+        </div>
+        <br>
+
+        <label>Insérez votre photo:</label><input type="file" name="photo"><br>
+        <button type="submit">Envoyer</button>
+
+    </form>
+</body>
+
+</html>

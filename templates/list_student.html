@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+ <table>
+     <tr>
+         <td>nom</td>
+         <td>prenom</td>
+     </tr>
+     {%for i in range(0, len)%}
+     <tr>
+         <td>{{students[i].nom}}</td>
+         <td>{{students[i].prenom}}</td>
+     </tr>
+     {%endfor%}
+ </table>
+</body>
+</html>
